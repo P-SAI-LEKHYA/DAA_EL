@@ -1,5 +1,0 @@
-match=2
-mismatch=-1
-gap_open=-2
-gap_extend=-1
-mode=1
