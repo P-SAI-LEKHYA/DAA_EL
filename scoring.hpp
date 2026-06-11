@@ -41,7 +41,7 @@ struct ScoringConfig {
 };
 
 // DNA-specific BLOSUM62 subset
-const int ScoringConfig::BLOSUM62[4][4] = {
+inline const int ScoringConfig::BLOSUM62[4][4] = {
     // A   T   G   C
     {  4, -1, -2, -2 },  // A
     { -1,  5, -2, -1 },  // T
@@ -50,7 +50,7 @@ const int ScoringConfig::BLOSUM62[4][4] = {
 };
 
 // DNA-specific PAM250 subset
-const int ScoringConfig::PAM250[4][4] = {
+inline const int ScoringConfig::PAM250[4][4] = {
     // A   T   G   C
     {  2, -1,  0, -1 },  // A
     { -1,  3, -1,  0 },  // T
